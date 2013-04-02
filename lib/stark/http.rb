@@ -2,11 +2,13 @@ require 'stark'
 
 class Stark::HTTP
   VERSION = '1.0.0'
+  HTTP_USER_AGENT = "#{self.name} #{VERSION} - Ruby #{RUBY_VERSION}"
 
   class ClientTransport < Thrift::BaseTransport
     def initialize(url)
       @url = URI url
-      @headers = {'Content-Type' => 'application/x-thrift'}
+      @headers = {'Content-Type' => 'application/x-thrift', 
+                  'User-Agent'   => Stark::HTTP::HTTP_USER_AGENT }
       @outbuf = ""
 
       @http = Net::HTTP.new @url.host, @url.port
