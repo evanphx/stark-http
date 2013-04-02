@@ -1,0 +1,8 @@
+.autotest
+History.txt
+Manifest.txt
+README.txt
+Rakefile
+bin/stark_http
+lib/stark/http.rb
+test/test_stark_http.rb

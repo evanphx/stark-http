@@ -1,0 +1,31 @@
+#!/usr/bin/env ruby
+
+require 'thrift/http'
+
+file = ARGV.shift
+klass = ARGV.shift
+
+url = ARGV.shift
+
+command = ARGV.shift
+
+$:.unshift File.expand_path("..", file)
+require file
+
+int = eval "#{klass}::Client"
+
+p url
+p int
+p command
+p ARGV
+
+args = eval "#{klass}::#{command.capitalize}_args"
+
+
+
+client = Thrift::HTTP.open url, int
+
+out = client.send command, *ARGV
+
+p out
+
