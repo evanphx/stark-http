@@ -1,4 +1,7 @@
 require 'stark'
+require 'net/http'
+require 'uri'
+require 'thrift'
 
 class Stark::HTTP
   VERSION = '1.0.0'

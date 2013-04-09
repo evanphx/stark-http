@@ -1,7 +1,7 @@
 require "test/unit"
-require "thrift/http"
+require "stark/http"
 
-class TestThrift::Http < Test::Unit::TestCase
+class TestStark::Http < Test::Unit::TestCase
   def test_sanity
     flunk "write tests or I will kneecap you"
   end
