@@ -1,28 +1,33 @@
-= stark-http
+# stark-http
 
-* FIX (url)
+* https://github.com/evanphx/stark-rack
 
-== DESCRIPTION:
+## DESCRIPTION:
 
-FIX (describe your package)
+HTTP Transport for Thrift services.
 
-== FEATURES/PROBLEMS:
+![stark](http://ecx.images-amazon.com/images/I/41FuQ1aAkVL._SL500_AA300_.jpg)
 
-* FIX (list of features or problems)
+## FEATURES/PROBLEMS:
 
-== SYNOPSIS:
+* Provides an easy HTTP transport for Thrift services so
+deployment is easier than deploy socket based apps.
+* Designed to work with [stark-rack](https://github.com/evanphx/stark-http)
+
+## SYNOPSIS:
 
   FIX (code sample of usage)
 
-== REQUIREMENTS:
+## REQUIREMENTS:
 
-* FIX (list of requirements)
+* [stark-rack](https://github.com/evanphx/stark-http) or alternative
+and compatible endpoint.
 
-== INSTALL:
+## INSTALL:
 
-* FIX (sudo gem install, anything else)
+* gem install stark-http
 
-== DEVELOPERS:
+## DEVELOPERS:
 
 After checking out the source, run:
 
@@ -31,11 +36,11 @@ After checking out the source, run:
 This task will install any missing dependencies, run the tests/specs,
 and generate the RDoc.
 
-== LICENSE:
+## LICENSE:
 
 (The MIT License)
 
-Copyright (c) 2012 FIX
+Copyright (c) 2013 Evan Phoenix
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
