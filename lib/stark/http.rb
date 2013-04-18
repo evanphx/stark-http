@@ -55,8 +55,8 @@ class Stark::HTTP
   end
 
   def self.open(url, interface)
-    trans = Thrift::HTTP::ClientTransport.new(url)
+    trans = ClientTransport.new(url)
     proto = Thrift::BinaryProtocolFactory.new.get_protocol trans
-    interface.new proto
+    interface.new proto, proto
   end
 end
