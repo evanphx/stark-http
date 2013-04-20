@@ -16,7 +16,9 @@ class Stark::HTTP
 
       @http = Net::HTTP.new @url.host, @url.port
       @http.use_ssl = @url.scheme == "https"
-      @http.set_debug_output $stderr
+      if $DEBUG
+        @http.set_debug_output $stderr
+      end
     end
 
     def open?; true end
