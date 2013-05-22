@@ -1,8 +1,10 @@
 .autotest
+.gemtest
 History.txt
 Manifest.txt
 README.md
 Rakefile
 bin/stark_http
 lib/stark/http.rb
+stark-http.gemspec
 test/test_stark_http.rb
